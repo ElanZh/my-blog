@@ -1,3 +1,4 @@
+use my_blog;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -34,6 +35,7 @@ CREATE TABLE `t_blog`  (
   `views` int(11) NULL DEFAULT 0,
   `type_id` bigint(20) NULL DEFAULT NULL,
   `user_id` bigint(20) NULL DEFAULT NULL,
+  `content_view` text NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `FK292449gwg5yf7ocdlmswv9w4j`(`type_id`) USING BTREE,
   INDEX `FK8ky5rrsxh01nkhctmo7d48p82`(`user_id`) USING BTREE,
